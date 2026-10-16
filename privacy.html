@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy · Home Kurne Backup</title>
+<style>body{max-width:740px;margin:48px auto;padding:0 24px;font:17px/1.7 system-ui,sans-serif;color:#18252c;background:#f7faf9}h1,h2{line-height:1.25}a{color:#086354}main{background:white;padding:32px;border-radius:16px}small{color:#52636a}</style>
+<main>
+<p><a href="index.html">Home Kurne Backup</a></p>
+<h1>Privacy and data handling</h1>
+<small>Updated 16 October 2026</small>
+<h2>Purpose and content</h2>
+<p>This personal-use utility backs up selected home infrastructure exports. These exports may contain private configuration and credentials. They are processed locally and encrypted with restic before upload to Google Drive. Decryption requires a separately stored backup password.</p>
+<h2>Google authorization</h2>
+<p>The utility requests the Google Drive <code>drive.file</code> permission to create and manage its backup files. It does not request general access to all existing Drive files. Google handles account sign-in; the utility does not collect the Google account password.</p>
+<p>OAuth client configuration and refresh tokens are stored locally to support unattended backups. They and the backup encryption password are excluded from the backup source directories.</p>
+<h2>Storage and disclosure</h2>
+<p>Encrypted backup data is sent to the Google Drive account authorized by the owner. The utility does not sell backup data or send it to advertising or analytics services. Its source repository contains sanitized configuration and code; raw device exports are excluded from Git.</p>
+<p>Google and the hosting provider of this information page may process standard connection metadata under their own policies.</p>
+<h2>Control and retention</h2>
+<p>The owner can revoke access through Google Account connections and remove backup files from Drive. Revoking access does not itself delete existing snapshots. Local configuration, credentials, backups and recovery keys remain under the owner's control.</p>
+<h2>Contact</h2>
+<p>For this personal utility, use the application support address shown on its Google consent screen.</p>
+</main>
+</html>
